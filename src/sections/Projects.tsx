@@ -18,7 +18,7 @@ const portfolioProjects = [
       { title: "Implemented server actions and SQLite backend integration" },
       { title: "Deployed to Vercel with secure image upload handling" },
     ],
-    link: "https://youtu.be/your-foodie-app-demo-link",
+    link: "https://nextjs-foodie-app.vercel.app/",
     image: foodieApp,
   },
   {
@@ -35,7 +35,7 @@ const portfolioProjects = [
         title: "Optimized component structure for scalability and readability",
       },
     ],
-    link: "https://youtu.be/your-elegant-shop-demo-link",
+    link: "https://reactjs-elegant-shop.vercel.app/",
     image: elegantShop,
   },
   {
@@ -50,7 +50,7 @@ const portfolioProjects = [
       { title: "Integrated wallet connection via Reown AppKit in React" },
       { title: "Deployed to Ethereum Sepolia for testing and demonstration" },
     ],
-    link: "https://youtu.be/your-web3-funding-demo-link",
+    link: "https://web3-interface-azure.vercel.app/",
     image: web3Funding,
   },
   {
@@ -64,7 +64,7 @@ const portfolioProjects = [
         title: "Implemented real-time event history display from contract logs",
       },
     ],
-    link: "https://youtu.be/your-web3-campaign-demo-link",
+    link: "https://web3-campaign.vercel.app/",
     image: web3Campaign,
   },
 ];
