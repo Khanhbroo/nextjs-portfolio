@@ -1,6 +1,7 @@
-import { ToolboxIcon } from "@/components/ToolboxIcon";
 import { Fragment } from "react";
 import { twMerge } from "tailwind-merge";
+
+import { ToolboxIcon } from "@/components/ToolboxIcon";
 
 export const ToolboxItems = ({
   items,

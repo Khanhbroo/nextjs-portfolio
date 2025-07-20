@@ -1,3 +1,6 @@
+import Image from "next/image";
+import { Card } from "@/components/Card";
+
 import foodieApp from "@/assets/images/nextjs-foodie-app.png";
 import elegantShop from "@/assets/images/reactjs-elegant-shop.png";
 import web3Campaign from "@/assets/images/web3-campaign.png";
@@ -5,9 +8,6 @@ import web3Funding from "@/assets/images/web3-funding.png";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
-
-import Image from "next/image";
-import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {

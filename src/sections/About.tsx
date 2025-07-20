@@ -1,6 +1,8 @@
 "use client";
 
+import { useRef } from "react";
 import Image from "next/image";
+
 import { SectionHeader } from "@/components/SectionHeader";
 import { CardHeader } from "@/components/CardHeader";
 import { Card } from "@/components/Card";
@@ -18,7 +20,6 @@ import TailwindCSSIcon from "@/assets/icons/tailwindcss.svg";
 import GithubIcon from "@/assets/icons/github.svg";
 import mapImage from "@/assets/images/map.png";
 import smileEmoji from "@/assets/images/memoji-smile.png";
-import { useRef } from "react";
 
 const toolboxItems = [
   {
