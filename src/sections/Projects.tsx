@@ -7,12 +7,13 @@ import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
 
 import Image from "next/image";
+import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
     company: "Self-initiated Project",
     year: "2025",
-    title: "Next.js Foodie Recipes App",
+    title: "Next.js Foodie App",
     results: [
       { title: "Built a full-stack foodie app with dynamic meals listing" },
       { title: "Implemented server actions and SQLite backend integration" },
@@ -24,7 +25,7 @@ const portfolioProjects = [
   {
     company: "Self-initiated Project",
     year: "2025",
-    title: "React.js Elegant E-commerce Shop",
+    title: "React.js Elegant Shop",
     results: [
       { title: "Developed responsive e-commerce UI with React.js" },
       {
@@ -56,7 +57,7 @@ const portfolioProjects = [
   {
     company: "VBI Academy Internship",
     year: "2025",
-    title: "Web3 Campaign Crowdfunding Platform",
+    title: "Web3 Campaign Crowdfunding",
     results: [
       { title: "Built decentralized campaign creation and funding features" },
       { title: "Designed enhanced UI/UX for blockchain interactions" },
@@ -85,10 +86,13 @@ export const ProjectsSection = () => {
           See how I transformed concepts into engaging digital experiences.
         </p>
         <div className="flex flex-col mt-10 md:mt-20 gap-20">
-          {portfolioProjects.map((project) => (
-            <div
+          {portfolioProjects.map((project, index) => (
+            <Card
               key={project.title}
-              className="bg-gray-800 rounded-3xl relative z-0 overflow-hidden after:z-10 after:content-[''] after:absolute after:inset-0  after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 after:pointer-events-none"
+              className="px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
+              style={{
+                top: `calc(64px + ${index * 40}px)`,
+              }}
             >
               <div
                 className="absolute inset-0 -z-10 opacity-5"
@@ -133,7 +137,7 @@ export const ProjectsSection = () => {
                   />
                 </div>
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>
