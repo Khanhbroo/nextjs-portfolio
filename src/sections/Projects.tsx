@@ -1,8 +1,9 @@
 import Image from "next/image";
 import { Card } from "@/components/Card";
 
-import foodieApp from "@/assets/images/nextjs-foodie-app.png";
-import elegantShop from "@/assets/images/reactjs-elegant-shop.png";
+import mernEcommerceBunnyImage from "@/assets/images/mern-ecommerce-bunny.png";
+import todoAppImage from "@/assets/images/mern-todoapp.png";
+import lunarLaneImage from "@/assets/images/lunarlane.png";
 import web3Campaign from "@/assets/images/web3-campaign.png";
 import web3Funding from "@/assets/images/web3-funding.png";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
@@ -13,49 +14,62 @@ const portfolioProjects = [
   {
     company: "Self-initiated Project",
     year: "2025",
-    title: "Next.js Foodie App",
+    title: "MERN Ecommerce Bunny",
     results: [
-      { title: "Built a full-stack foodie app with dynamic meals listing" },
-      { title: "Implemented server actions and SQLite backend integration" },
-      { title: "Deployed to Vercel with secure image upload handling" },
+      {
+        title:
+          "Full-stack ecommerce site using MERN (MongoDB, Express, React, Node) with TailwindCSS, Redux and React Router",
+      },
+      { title: "Structured project with backend + frontend folders" },
+      { title: "Deployed on Vercel (see live demo)" },
     ],
-    link: "https://nextjs-foodie-app.vercel.app/",
-    image: foodieApp,
+    link: "https://mern-ecommerce-bunny.vercel.app",
+    image: mernEcommerceBunnyImage,
   },
   {
     company: "Self-initiated Project",
     year: "2025",
-    title: "React.js Elegant Shop",
+    title: "TodoApp (Full-stack To-Do application)",
     results: [
-      { title: "Developed responsive e-commerce UI with React.js" },
       {
         title:
-          "Built product catalog, cart functionality, and state management",
+          "Built a full-stack task management app (frontend + backend API)",
       },
       {
-        title: "Optimized component structure for scalability and readability",
+        title:
+          "Implemented create / edit / delete / complete tasks via RESTful API",
+      },
+      {
+        title:
+          "Lightweight frontend with vanilla TypeScript + HTML/CSS communicating with backend",
       },
     ],
-    link: "https://reactjs-elegant-shop.vercel.app/",
-    image: elegantShop,
+    link: "https://todoapp-z83f.onrender.com",
+    image: todoAppImage,
   },
   {
-    company: "VBI Academy Internship",
+    company: "Self-initiated Project",
     year: "2025",
-    title: "Web3 Funding DApp",
+    title: "Lunar Lane – React Ecommerce Website",
     results: [
       {
         title:
-          "Developed smart contract funding logic with Solidity and Foundry",
+          "Developed a modern responsive e-commerce web app with React, TailwindCSS, Redux and React Router",
       },
-      { title: "Integrated wallet connection via Reown AppKit in React" },
-      { title: "Deployed to Ethereum Sepolia for testing and demonstration" },
+      {
+        title:
+          "Implemented Home, Shop, Cart, Checkout, product details with multiple images and state-managed cart",
+      },
+      {
+        title:
+          "Used reusable UI components + smooth UI/UX (animations, hover effects)",
+      },
     ],
-    link: "https://web3-interface-azure.vercel.app/",
-    image: web3Funding,
+    link: "https://ecommerce-lunarlane.vercel.app",
+    image: lunarLaneImage,
   },
   {
-    company: "VBI Academy Internship",
+    company: "VBI Academy Fresher",
     year: "2025",
     title: "Web3 Campaign Crowdfunding",
     results: [
@@ -117,8 +131,7 @@ export const ProjectsSection = () => {
                         key={result.title}
                         className="flex gap-2 items-center text-sm md:text-base text-white/50"
                       >
-                        <CheckCircleIcon className="size-5 md:size-6" />
-                        <span>{result.title}</span>
+                        <span>- {result.title}</span>
                       </li>
                     ))}
                   </ul>
