@@ -18,8 +18,6 @@ import ReactJSIcon from "@/assets/icons/react.svg";
 import NextJSIcon from "@/assets/icons/nextjs.svg";
 import TailwindCSSIcon from "@/assets/icons/tailwindcss.svg";
 import GithubIcon from "@/assets/icons/github.svg";
-import mapImage from "@/assets/images/map.png";
-import smileEmoji from "@/assets/images/memoji-smile.png";
 
 const toolboxItems = [
   {
@@ -170,19 +168,34 @@ export const AboutSection = () => {
               </div>
             </Card>
             <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
-              <Image
-                src={mapImage}
-                alt="map"
-                className="h-full w-full object-cover object-left-top"
-              />
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[20px] size-20 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-20 animate-ping [animation-duration:2s]"></div>
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-10"></div>
-                <Image
-                  src={smileEmoji}
-                  alt="smiling memoji"
-                  className="size-20 object-cover"
-                />
+              <div className="h-full flex flex-col justify-center items-center bg-gradient-to-r from-emerald-300 to-sky-400 rounded-3xl p-6">
+                <div className="text-gray-900 text-sm md:text-base font-medium flex flex-col gap-1 items-center md:items-start w-full">
+                  <p className="flex items-center gap-2">
+                    <span className="font-bold">Email:</span>{" "}
+                    <a
+                      href="mailto:khanhdq1120@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline"
+                    >
+                      khanhdq1120@gmail.com
+                    </a>
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <span className="font-bold">Phone:</span> +84 357519498
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <span className="font-bold">GitHub:</span>{" "}
+                    <a
+                      href="https://github.com/Khanhbroo"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline"
+                    >
+                      github.com/Khanhbroo
+                    </a>
+                  </p>
+                </div>
               </div>
             </Card>
           </div>
